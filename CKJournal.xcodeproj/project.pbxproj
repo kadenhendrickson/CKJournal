@@ -8,20 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		DC35737422A5CDBC00CB7330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35737322A5CDBC00CB7330 /* AppDelegate.swift */; };
-		DC35737622A5CDBC00CB7330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35737522A5CDBC00CB7330 /* ViewController.swift */; };
 		DC35737922A5CDBC00CB7330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC35737722A5CDBC00CB7330 /* Main.storyboard */; };
 		DC35737B22A5CDBC00CB7330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC35737A22A5CDBC00CB7330 /* Assets.xcassets */; };
 		DC35737E22A5CDBC00CB7330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC35737C22A5CDBC00CB7330 /* LaunchScreen.storyboard */; };
+		DC35738822A5CE3300CB7330 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC35738722A5CE3300CB7330 /* CloudKit.framework */; };
+		DC35738B22A5CE7200CB7330 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35738A22A5CE7200CB7330 /* Entry.swift */; };
+		DC35738E22A5D31F00CB7330 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35738D22A5D31F00CB7330 /* EntryController.swift */; };
+		DC35739122A5DC8000CB7330 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35739022A5DC7F00CB7330 /* EntryListTableViewController.swift */; };
+		DC35739422A5DF4400CB7330 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35739322A5DF4400CB7330 /* EntryDetailViewController.swift */; };
+		DC35739622A5E19B00CB7330 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35739522A5E19B00CB7330 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC35737022A5CDBC00CB7330 /* CKJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC35737322A5CDBC00CB7330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC35737522A5CDBC00CB7330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC35737822A5CDBC00CB7330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC35737A22A5CDBC00CB7330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC35737D22A5CDBC00CB7330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC35737F22A5CDBC00CB7330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC35738522A5CE2F00CB7330 /* CKJournal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CKJournal.entitlements; sourceTree = "<group>"; };
+		DC35738722A5CE3300CB7330 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DC35738A22A5CE7200CB7330 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		DC35738D22A5D31F00CB7330 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		DC35739022A5DC7F00CB7330 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		DC35739322A5DF4400CB7330 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		DC35739522A5E19B00CB7330 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC35738822A5CE3300CB7330 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				DC35737222A5CDBC00CB7330 /* CKJournal */,
 				DC35737122A5CDBC00CB7330 /* Products */,
+				DC35738622A5CE3300CB7330 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,59 @@
 		DC35737222A5CDBC00CB7330 /* CKJournal */ = {
 			isa = PBXGroup;
 			children = (
-				DC35737322A5CDBC00CB7330 /* AppDelegate.swift */,
-				DC35737522A5CDBC00CB7330 /* ViewController.swift */,
+				DC35738522A5CE2F00CB7330 /* CKJournal.entitlements */,
+				DC35738922A5CE3D00CB7330 /* Resources */,
 				DC35737722A5CDBC00CB7330 /* Main.storyboard */,
+				DC35738C22A5D31300CB7330 /* Model */,
+				DC35738F22A5DC6A00CB7330 /* ModelController */,
+				DC35739222A5DF3200CB7330 /* ViewController */,
+			);
+			path = CKJournal;
+			sourceTree = "<group>";
+		};
+		DC35738622A5CE3300CB7330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC35738722A5CE3300CB7330 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC35738922A5CE3D00CB7330 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC35737322A5CDBC00CB7330 /* AppDelegate.swift */,
 				DC35737A22A5CDBC00CB7330 /* Assets.xcassets */,
 				DC35737C22A5CDBC00CB7330 /* LaunchScreen.storyboard */,
 				DC35737F22A5CDBC00CB7330 /* Info.plist */,
 			);
-			path = CKJournal;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC35738C22A5D31300CB7330 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC35738A22A5CE7200CB7330 /* Entry.swift */,
+				DC35739522A5E19B00CB7330 /* DateFormatter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC35738F22A5DC6A00CB7330 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				DC35738D22A5D31F00CB7330 /* EntryController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		DC35739222A5DF3200CB7330 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC35739022A5DC7F00CB7330 /* EntryListTableViewController.swift */,
+				DC35739322A5DF4400CB7330 /* EntryDetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +154,14 @@
 				TargetAttributes = {
 					DC35736F22A5CDBC00CB7330 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC35737622A5CDBC00CB7330 /* ViewController.swift in Sources */,
+				DC35739622A5E19B00CB7330 /* DateFormatter.swift in Sources */,
+				DC35738E22A5D31F00CB7330 /* EntryController.swift in Sources */,
+				DC35738B22A5CE7200CB7330 /* Entry.swift in Sources */,
+				DC35739122A5DC8000CB7330 /* EntryListTableViewController.swift in Sources */,
+				DC35739422A5DF4400CB7330 /* EntryDetailViewController.swift in Sources */,
 				DC35737422A5CDBC00CB7330 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +352,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CKJournal/CKJournal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = CKJournal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CKJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CKJournal/CKJournal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = CKJournal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CKJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
